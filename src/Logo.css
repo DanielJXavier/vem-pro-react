@@ -2,19 +2,13 @@
   animation: App-logo-spin infinite 10s linear reverse;
   height: 40vmin;
   pointer-events: none;
-  transition: all;
 }
 
 @keyframes App-logo-spin {
-  0% {
-    height: 40vmin;
+  from {
     transform: rotate(0deg);
   }
-  50% {
-    height: 20vmin;
-  }
-  100% {
-    height: 40vmin;
+  to {
     transform: rotate(360deg);
   }
 }
