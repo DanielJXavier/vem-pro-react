@@ -2,10 +2,18 @@ import React from 'react';
 import logo from './logo.svg';
 import './Logo.css';
 
-function Logo() {
+const Logo = (props) => {
+    let items = []
+
+    for (let i = 0; i < props.repeat; i++) {
+        items.push(<img key={i} src={logo} className="App-logo" alt="logo" />)
+    }
+
   return (
-    <img src={logo} className="App-logo" alt="logo" />
-  );
-}
+        <div>
+            {items}
+        </div>
+    )
+};
 
 export default Logo;

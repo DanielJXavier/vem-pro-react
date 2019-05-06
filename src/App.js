@@ -5,16 +5,14 @@ import Logo from './Logo'
 import Text from './Text'
 import Link from './Link'
 
-function App() {
-  return (
+const App = () => (
     <div className="App">
-      <header className="App-header">
-        <Logo />
+    <Header>
+      <Logo repeat={6} />
         <Text />
         <Link />
-      </header>
+    </Header>
     </div>
   );
-}
 
 export default App;
