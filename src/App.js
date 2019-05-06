@@ -1,18 +1,23 @@
+// Core
 import React from 'react';
+
+// Styles
 import './App.css';
 
+// Components
+import Header from './Header'
 import Logo from './Logo'
 import Text from './Text'
 import Link from './Link'
 
 const App = () => (
-    <div className="App">
+  <div className="App">
     <Header>
       <Logo repeat={6} />
-        <Text />
-        <Link />
+      <Text />
+      <Link />
     </Header>
-    </div>
-  );
+  </div>
+);
 
 export default App;

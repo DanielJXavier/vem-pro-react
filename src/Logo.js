@@ -1,5 +1,10 @@
+// Core
 import React from 'react';
+
+// Assets
 import logo from './logo.svg';
+
+// Styles
 import './Logo.css';
 
 const Logo = (props) => {
@@ -9,7 +14,7 @@ const Logo = (props) => {
         items.push(<img key={i} src={logo} className="App-logo" alt="logo" />)
     }
 
-  return (
+    return (
         <div>
             {items}
         </div>
