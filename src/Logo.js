@@ -21,4 +21,8 @@ const Logo = (props) => {
     )
 };
 
+Logo.defaultProps = {
+    repeat: 1
+}
+
 export default Logo;
