@@ -13,7 +13,7 @@ import Link from './Link'
 const App = () => (
   <div className="App">
     <Header>
-      <Logo repeat={50} />
+      <Logo />
       <Text />
       <Link />
     </Header>
