@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Styles
-import './App.css';
+import './App.scss';
 
 // Components
 import Header from './Header'
@@ -13,7 +13,7 @@ import Link from './Link'
 const App = () => (
   <div className="App">
     <Header>
-      <Logo repeat={50} />
+      <Logo />
       <Text />
       <Link />
     </Header>
