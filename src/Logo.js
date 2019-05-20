@@ -5,7 +5,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 
 // Styles
-import './Logo.css';
+import './Logo.scss';
 
 class Logo extends Component {
     state = {

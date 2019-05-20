@@ -2,7 +2,7 @@
 import React from 'react';
 
 // Styles
-import './App.css';
+import './App.scss';
 
 // Components
 import Header from './Header'
