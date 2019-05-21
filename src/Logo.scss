@@ -1,4 +1,4 @@
-.App-logo-header {
+.logo-header {
   margin: 30px auto;
   display: inline-grid;
   grid-template-columns: 200px 200px;
@@ -34,22 +34,22 @@
   }
 }
 
-.App-logo-content {
+.logo-content {
   display: flex;
   justify-content: space-around;
 }
 
-.App-logo {
+.logo {
   height: 150px;
-  animation: App-logo-spin infinite 10s linear reverse;
+  animation: logo-spin infinite 10s linear reverse;
   pointer-events: none;
+
+  &:nth-child(even) {
+    animation-direction: normal;
+  }
 }
 
-.App-logo:nth-child(even) {
-  animation-direction: normal;
-}
-
-@keyframes App-logo-spin {
+@keyframes logo-spin {
   from {
     transform: rotate(0deg);
   }

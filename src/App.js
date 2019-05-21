@@ -11,7 +11,7 @@ import Text from './Text'
 import Link from './Link'
 
 const App = () => (
-  <div className="App">
+  <div className="app">
     <Header>
       <Logo />
       <Text />

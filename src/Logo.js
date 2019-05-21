@@ -18,33 +18,19 @@ class Logo extends Component {
         let items = []
 
         for (let i = 0; i < repeat; i++) {
-            items.push(<img key={i} src={logo} className="App-logo" alt="logo" />)
+            items.push(<img key={i} src={logo} className="logo" alt="logo" />)
         }
 
         return (
             <div>
-                <div className="App-logo-content">{items}</div>
-                <div className="App-logo-header">
-                    <button
-                        disabled={repeat >= 6}
-                        onClick={() => this.setState((() => ({ repeat: repeat + 1 })))}
-                    >
-                        Add Logo
-                    </button>
-                    <button
-                        disabled={repeat <= 1}
-                        onClick={() => this.setState((({ repeat }) => ({ repeat: repeat - 1 })))}
-                    >
-                        Remove Logo
-                    </button>
+                <div className="logo-content">{items}</div>
+                <div className="logo-header">
+                    <button disabled={repeat >= 6} onClick={() => this.setState((({ repeat }) => ({ repeat: repeat + 1 })))}>Add Logo</button>
+                    <button disabled={repeat <= 1} onClick={() => this.setState((({ repeat }) => ({ repeat: repeat - 1 })))}>Remove Logo</button>
                 </div>
             </div >
         )
     }
 };
-
-Logo.defaultProps = {
-    repeat: 1
-}
 
 export default Logo;
