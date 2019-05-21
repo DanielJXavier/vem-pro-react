@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 
 // Assets
-import logo from './logo.svg';
+import logo from '../assets/logo.svg';
 
 // Styles
 import './Logo.scss';
